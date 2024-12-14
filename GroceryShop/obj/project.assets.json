@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/coolka/projects/web/StudentDotnetProject/StudentProject/StudentProject.csproj",
+      "projectUniqueName": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/StudentProject.csproj",
       "projectName": "StudentProject",
-      "projectPath": "/home/coolka/projects/web/StudentDotnetProject/StudentProject/StudentProject.csproj",
+      "projectPath": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/StudentProject.csproj",
       "packagesPath": "/home/coolka/.nuget/packages/",
-      "outputPath": "/home/coolka/projects/web/StudentDotnetProject/StudentProject/obj/",
+      "outputPath": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/coolka/.nuget/NuGet/NuGet.Config"
