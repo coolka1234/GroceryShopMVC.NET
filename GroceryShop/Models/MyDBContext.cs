@@ -14,7 +14,6 @@ namespace GroceryShop.Models
         }
 
         public DbSet<Article> Article { get; set; }
-        public DbSet<Category> Category { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

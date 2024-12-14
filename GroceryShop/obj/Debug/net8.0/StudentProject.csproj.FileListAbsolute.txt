@@ -1,0 +1,9 @@
+/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/obj/Debug/net8.0/StudentProject.csproj.AssemblyReference.cache
+/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/obj/Debug/net8.0/StudentProject.GeneratedMSBuildEditorConfig.editorconfig
+/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/obj/Debug/net8.0/StudentProject.AssemblyInfoInputs.cache
+/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/obj/Debug/net8.0/StudentProject.AssemblyInfo.cs
+/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/obj/Debug/net8.0/StudentProject.csproj.CoreCompileInputs.cache
+/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/obj/Debug/net8.0/StudentProject.MvcApplicationPartsAssemblyInfo.cache
+/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/obj/Debug/net8.0/StudentProject.RazorAssemblyInfo.cache
+/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/obj/Debug/net8.0/StudentProject.RazorAssemblyInfo.cs
+/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/obj/Debug/net8.0/StudentProject.sourcelink.json
