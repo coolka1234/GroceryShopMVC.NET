@@ -1,0 +1,81 @@
+﻿@model IEnumerable<GroceryShop.Models.Article>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImagePath)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @if (item.ImagePath != null)
+                    {
+                        <img src="@item.ImagePath" style="max-width: 50px; max-height: 50px;" />
+                    }
+                    else
+                    {
+                        <img src="~/image/noimage.jpg" style="max-width: 50px; max-height: 50px;" />
+                        
+                    }
+                    
+                </td>
+                <td>
+                    <span data-category-id="@item.CategoryId" data-category-name=""></span>
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        var categoriesDict = {};
+
+                var spans = document.querySelectorAll('[data-category-id]');
+        spans.forEach(function (span) {
+            var categoryId = span.getAttribute('data-category-id');
+            var categoryName = categoriesDict[categoryId] || "no category";
+            span.setAttribute('data-category-name', categoryName);
+            span.innerText = categoryName;
+        });
+    </script>
+}
