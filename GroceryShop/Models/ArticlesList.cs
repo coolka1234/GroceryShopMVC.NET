@@ -1,13 +1,18 @@
 using System.Linq;
 using GroceryShop.Models;
+using Microsoft.EntityFrameworkCore;
 
-public class ArticlesListContext : IArticlesContext
+public class ArticlesListContext : DbContext, IArticlesContext
 {
+    public DbSet<Article> Article { get; set; }
+
+    public ArticlesListContext(DbContextOptions<ArticlesListContext> options) : base(options) { }
+
     private readonly List<Article> _articles = new();
 
     public IEnumerable<Article> GetAll() => _articles;
 
-    public Article GetById(Guid id) => _articles.FirstOrDefault(a => a.Id == id);
+    public Article GetById(int id) => _articles.FirstOrDefault(a => a.Id == id);
 
     public void Add(Article article) => _articles.Add(article);
 
@@ -23,5 +28,5 @@ public class ArticlesListContext : IArticlesContext
         }
     }
 
-    public void Delete(Guid id) => _articles.RemoveAll(a => a.Id == id);
+    public void Delete(int id) => _articles.RemoveAll(a => a.Id == id);
 }

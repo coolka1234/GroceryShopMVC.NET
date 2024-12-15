@@ -1,8 +1,8 @@
+using Microsoft.EntityFrameworkCore;
 using GroceryShop.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -10,13 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddSingleton<IArticlesContext, ArticlesDictionaryContext>();
+// builder.Services.AddSingleton<IArticlesContext, ArticlesDictionaryContext>();
 // builder.Services.AddSingleton<IArticlesContext, ArticlesListContext>();
-builder.Services.AddDbContextPool<MyDbContext>(options =>
+builder.Services.AddDbContextPool<ArticlesListContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -27,10 +26,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-
 app.UseHttpsRedirection();
 app.UseRouting();
-
 
 app.UseAuthorization();
 
