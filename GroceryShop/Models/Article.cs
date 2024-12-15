@@ -14,7 +14,7 @@ namespace GroceryShop.Models
     }
     public class Article
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         [Required]
         [MinLength(3, ErrorMessage = "Name must be at least 3 characters long")]
         public string Name { get; set; }

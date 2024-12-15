@@ -18,7 +18,10 @@ namespace GroceryShop.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             Console.WriteLine("on model creating executing");
-            modelBuilder.Seed();
+            modelBuilder.Seed();        
+            // modelBuilder.Entity<Article>()
+            // .Property(a => a.Category)
+            // .HasConversion<string>();
             base.OnModelCreating(modelBuilder);
         }
 
@@ -34,6 +37,9 @@ namespace GroceryShop.Models
 
                 existingArticle.Price = article.Price;
             }
+        }
+        private String[] categories() {
+            return Enum.GetNames(typeof(Category));
         }
     }
 }

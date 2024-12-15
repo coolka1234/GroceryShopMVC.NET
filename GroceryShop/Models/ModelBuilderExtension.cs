@@ -15,7 +15,6 @@ namespace GroceryShop.Models
             {
                  new Article()
                 {
-                    Id = 1,
                     Name = "Cheese",
                     Price = 3F,
                     PriceAsString = "3.0",
@@ -24,7 +23,6 @@ namespace GroceryShop.Models
                     Category = Category.Dairy
                 }, new Article()
                 {
-                    Id = 2,
                     Name = "Plum",
                     Price = 2.7F,
                     PriceAsString = "2.7",
@@ -33,7 +31,6 @@ namespace GroceryShop.Models
                     Category = Category.Fruits
                 }, new Article()
                 {
-                    Id = 3,
                     Name = "Potato",
                     Price = 4.5F,
                     PriceAsString = "4.5",

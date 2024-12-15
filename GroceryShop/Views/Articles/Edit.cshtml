@@ -1,56 +1,35 @@
-﻿@model GroceryShop.Models.Article
+﻿@model Article
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Edit Article";
 }
 
-<h1>Edit</h1>
+<h1>Edit Article</h1>
 
-<h4>Article</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PriceAsString" class="control-label"></label>
-                <input asp-for="PriceAsString" class="form-control" step=".01" type="number" min="0" />
-                <span asp-validation-for="PriceAsString" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CategoryId" class="control-label"></label>
-                <select asp-for="CategoryId" asp-items="@(new SelectList(ViewBag.Categories, "Id", "Name"))" class="form-control">
-                </select>
-                <span asp-validation-for="CategoryId" class="text-danger"></span>
-            </div>
-            <div>
-                <p>@Html.DisplayNameFor(model => model.ImagePath)</p>
-                @if (Model.ImagePath != null)
-                {
-                    <img src="~/@Model.ImagePath" />
-                }
-                else
-                {
-                    <img src="~/image/noimage.jpg" />
-                }
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="bestBefore"></label>
+        <input asp-for="bestBefore" type="date" class="form-control" />
+        <span asp-validation-for="bestBefore" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Category"></label>
+        <select asp-for="Category" asp-items="Html.GetEnumSelectList<Category>()" class="form-control">
+            <option value="">-- Select Category --</option>
+        </select>
+        <span asp-validation-for="Category" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

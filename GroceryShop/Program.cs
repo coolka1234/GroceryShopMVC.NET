@@ -10,6 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<IArticlesContext, ArticlesDictionaryContext>();
+// builder.Services.AddSingleton<IArticlesContext, ArticlesListContext>();
 builder.Services.AddDbContextPool<MyDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));

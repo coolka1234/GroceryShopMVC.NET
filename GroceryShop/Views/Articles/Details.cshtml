@@ -1,50 +1,33 @@
-﻿@model GroceryShop.Models.Article
+﻿@model Article
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Article Details";
 }
 
-<h1>Details</h1>
+<h1>Article Details</h1>
 
-<div>
-    <h4>Article</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CategoryId)
-        </dt>
-        <dd class="col-sm-10"> 
-           @ViewBag.Category
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.ImagePath)
-        </dt>
-    </dl>
-    @if (Model.ImagePath != null)
-    {
-        <img src="~/@Model.ImagePath" />
-    }
-    else
-    {
-        <img src="~/image/noimage.jpg" />
-    }
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <td>@Model.Name</td>
+    </tr>
+    <tr>
+        <th>Price</th>
+        <td>@Model.Price.ToString("C")</td>
+    </tr>
+    <tr>
+        <th>Expiration Date</th>
+        <td>@Model.bestBefore.ToShortDateString()</td>
+    </tr>
+    <tr>
+        <th>Category</th>
+        <td>@Model.Category</td>
+    </tr>
+</table>
+
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+
 
 
 
