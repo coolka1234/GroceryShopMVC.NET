@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EzXfPQmnBNfy/11w6a02I82JjNZ0YKStQY3zaLhN7II=",
+  "Hash": "LgnOP03yFftYnfMenL1uZjmzazCsogaOgCRKtnt5XYU=",
   "Source": "StudentProject",
   "BasePath": "_content/StudentProject",
   "Mode": "Default",
@@ -1443,6 +1443,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/image/cheese.jpg",
+      "SourceId": "StudentProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/",
+      "BasePath": "_content/StudentProject",
+      "RelativePath": "image/cheese#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hkl11n90tc",
+      "Integrity": "j+8rqxhle+n7/EI0Uq+huMcAdYgXkRTQ5EdVd0G8R40=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/image/cheese.jpg"
+    },
+    {
+      "Identity": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/image/plum.jpg",
+      "SourceId": "StudentProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/",
+      "BasePath": "_content/StudentProject",
+      "RelativePath": "image/plum#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aghebb15b7",
+      "Integrity": "2pZ2j1UNW78hUC3MxQ+0Jfr/ku6xIazu4flV6gd/jyY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/image/plum.jpg"
+    },
+    {
+      "Identity": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/image/potato.jpg",
+      "SourceId": "StudentProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/",
+      "BasePath": "_content/StudentProject",
+      "RelativePath": "image/potato#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0p8lg7avjc",
+      "Integrity": "vPTYVZEJ+7uwojaeeMdfsyKrF4VLca2Ybi/uwKAwMR4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/image/potato.jpg"
     },
     {
       "Identity": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/js/site.js",
@@ -3320,6 +3383,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-tOy5kS1PTkjkEg7bjV8bJa0VpoEZJUHnbqYmm1YyhMg="
+        }
+      ]
+    },
+    {
+      "Route": "image/cheese.hkl11n90tc.jpg",
+      "AssetFile": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/image/cheese.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24482"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j+8rqxhle+n7/EI0Uq+huMcAdYgXkRTQ5EdVd0G8R40=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Dec 2024 10:41:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hkl11n90tc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/cheese.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j+8rqxhle+n7/EI0Uq+huMcAdYgXkRTQ5EdVd0G8R40="
+        }
+      ]
+    },
+    {
+      "Route": "image/cheese.jpg",
+      "AssetFile": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/image/cheese.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24482"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j+8rqxhle+n7/EI0Uq+huMcAdYgXkRTQ5EdVd0G8R40=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Dec 2024 10:41:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j+8rqxhle+n7/EI0Uq+huMcAdYgXkRTQ5EdVd0G8R40="
+        }
+      ]
+    },
+    {
+      "Route": "image/plum.aghebb15b7.jpg",
+      "AssetFile": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/image/plum.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5471"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2pZ2j1UNW78hUC3MxQ+0Jfr/ku6xIazu4flV6gd/jyY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Dec 2024 10:42:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aghebb15b7"
+        },
+        {
+          "Name": "label",
+          "Value": "image/plum.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2pZ2j1UNW78hUC3MxQ+0Jfr/ku6xIazu4flV6gd/jyY="
+        }
+      ]
+    },
+    {
+      "Route": "image/plum.jpg",
+      "AssetFile": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/image/plum.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5471"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2pZ2j1UNW78hUC3MxQ+0Jfr/ku6xIazu4flV6gd/jyY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Dec 2024 10:42:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2pZ2j1UNW78hUC3MxQ+0Jfr/ku6xIazu4flV6gd/jyY="
+        }
+      ]
+    },
+    {
+      "Route": "image/potato.0p8lg7avjc.jpg",
+      "AssetFile": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/image/potato.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136576"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vPTYVZEJ+7uwojaeeMdfsyKrF4VLca2Ybi/uwKAwMR4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Dec 2024 10:43:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0p8lg7avjc"
+        },
+        {
+          "Name": "label",
+          "Value": "image/potato.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vPTYVZEJ+7uwojaeeMdfsyKrF4VLca2Ybi/uwKAwMR4="
+        }
+      ]
+    },
+    {
+      "Route": "image/potato.jpg",
+      "AssetFile": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/image/potato.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136576"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vPTYVZEJ+7uwojaeeMdfsyKrF4VLca2Ybi/uwKAwMR4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Dec 2024 10:43:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vPTYVZEJ+7uwojaeeMdfsyKrF4VLca2Ybi/uwKAwMR4="
         }
       ]
     },

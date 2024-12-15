@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/image/cheese.jpg",
+      "PackagePath": "staticwebassets/image/cheese.jpg"
+    },
+    {
+      "Id": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/image/plum.jpg",
+      "PackagePath": "staticwebassets/image/plum.jpg"
+    },
+    {
+      "Id": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/image/potato.jpg",
+      "PackagePath": "staticwebassets/image/potato.jpg"
+    },
+    {
       "Id": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
