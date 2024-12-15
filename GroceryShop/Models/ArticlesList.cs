@@ -13,7 +13,7 @@ public class ArticlesListContext : DbContext, IArticlesContext
             {
                 Id = 1,
                 Name = "Milk",
-                Price = 1.2,
+                Price = 1.2F,
                 bestBefore = DateTime.Now.AddDays(7),
                 Category = Category.Dairy
             },
@@ -21,7 +21,7 @@ public class ArticlesListContext : DbContext, IArticlesContext
             {
                 Id = 2,
                 Name = "Bread",
-                Price = 0.8,
+                Price = 0.8F,
                 bestBefore = DateTime.Now.AddDays(2),
                 Category = Category.Sweets
             },
@@ -29,7 +29,7 @@ public class ArticlesListContext : DbContext, IArticlesContext
             {
                 Id = 3,
                 Name = "Apple",
-                Price = 0.5,
+                Price = 0.5F,
                 bestBefore = DateTime.Now.AddDays(5),
                 Category = Category.Fruits
             },
@@ -37,7 +37,7 @@ public class ArticlesListContext : DbContext, IArticlesContext
             {
                 Id = 4,
                 Name = "Carrot",
-                Price = 0.3,
+                Price = 0.3F,
                 bestBefore = DateTime.Now.AddDays(10),
                 Category = Category.Vegetables
             }

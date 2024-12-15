@@ -19,11 +19,11 @@ namespace GroceryShop.Models
         [MinLength(3, ErrorMessage = "Name must be at least 3 characters long")]
         public string Name { get; set; }
         public string PriceAsString { get; set; }
-        [NotMapped]
+        [DataType(DataType.DateTime)]
         public DateTime bestBefore { get; set; }
         [DataType(DataType.Currency)]
         [Required]
-        public double Price { get; set; }
+        public float Price { get; set; }
         public int CategoryId { get; set; }
 
         [NotMapped]
