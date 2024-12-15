@@ -95,7 +95,7 @@ public class ArticlesController : Controller
     // }
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Price,PriceAsString,ImagePath,CategoryId")] Article article)
+    public async Task<IActionResult> Edit(int id, [Bind("Id,Name,PriceAsString,bestBefore,Price,CategoryId,ImagePath,Category")] Article article)
     {
         if (id != article.Id)
         {
