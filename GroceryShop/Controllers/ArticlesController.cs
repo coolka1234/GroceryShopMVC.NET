@@ -42,7 +42,7 @@ public class ArticlesController : Controller
     }
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("Id,Name,Price,PriceAsString,bestBefore,ImagePath,CategoryId")] Article article, IFormFile imageFile)
+    public async Task<IActionResult> Create([Bind("Id,Name,PriceAsString,bestBefore,Price,CategoryId,ImagePath,Category")] Article article, IFormFile imageFile)
     {
         if (ModelState.IsValid)
         {
@@ -64,7 +64,7 @@ public class ArticlesController : Controller
 
                 article.ImagePath = "upload/"+uniqueFileName;
             } 
-            _context.Add(article);
+            _context.Article.Add(article);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -112,7 +112,8 @@ public class ArticlesController : Controller
                 float.TryParse(article.PriceAsString, NumberStyles.Float, cultureInfo, out NewPrice);
                 article.Price = NewPrice;
 
-                _context.Update(article);
+                _context.Article.Update(article);
+                System.Console.WriteLine("success");
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)

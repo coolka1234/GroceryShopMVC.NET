@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/image/cheese.jpg",
-      "PackagePath": "staticwebassets/image/cheese.jpg"
-    },
-    {
       "Id": "/home/coolka/projects/web/GroceryShopDotnet/GroceryShop/wwwroot/image/plum.jpg",
       "PackagePath": "staticwebassets/image/plum.jpg"
     },
