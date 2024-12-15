@@ -12,10 +12,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 // builder.Services.AddSingleton<IArticlesContext, ArticlesDictionaryContext>();
 // builder.Services.AddSingleton<IArticlesContext, ArticlesListContext>();
-builder.Services.AddDbContextPool<ArticlesDictContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
+// builder.Services.AddDbContextPool<ArticlesDictionaryContext>(options =>
+// {
+//     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+// });
 builder.Services.AddDbContextPool<ArticlesListContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));

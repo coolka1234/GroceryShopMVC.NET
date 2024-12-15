@@ -1,8 +1,11 @@
 using System.Collections.Generic;
 using GroceryShop.Models;
+using Microsoft.EntityFrameworkCore;
 
-public class ArticlesDictionaryContext : IArticlesContext
+public class ArticlesDictionaryContext : DbContext,IArticlesContext
 {
+    public DbSet<Article> Article { get; set; }
+    public ArticlesDictionaryContext(DbContextOptions<ArticlesDictionaryContext> options) : base(options) { }
     private readonly Dictionary<int, Article> _articles = new();
 
     public IEnumerable<Article> GetAll() => _articles.Values;
